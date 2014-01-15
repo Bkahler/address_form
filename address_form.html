@@ -11,14 +11,17 @@
 </head>
 <body>
   <div id= "main">
-    <h1>Test</h1>
+    <h1>Welcome to ExampleForm</h1><br>
+    <h3> Please Enter Your Address</h3>
+    <div id ="errorMessage"></div>
     <div class="form" id="address_form">
-      <form name="address" action=" " method="post">
+      <form name="address" id="address_form" action=" " method="post">
         Input your address:<br>
-        <input type="text" name="inputbox" placeholder="Street Number">
-        <input type="text" name="inputbox" placeholder="Unit">
-        <input type="text" name="inputbox" placeholder="City">
-        <select>
+        <input type="text" class="no_error" name="streetNumber" id="streetNumber" placeholder="Street Number">
+        <input type="text" class="no_error" name="unit" id="unit" placeholder="Unit">
+        <input type="text" class="no_error" name="city" id="city" placeholder="City">
+        <select class="no_error" id='state'>
+          <option value="">Select State</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
           <option value="AZ">Arizona</option>
@@ -71,8 +74,8 @@
           <option value="WI">Wisconsin</option>
           <option value="WY">Wyoming</option>
         </select>
-        <input type="text" name="inputbox" placeholder="Zip Code">
-        <input type="submit" name="button" value="submit">
+        <input type="text" class="no_error" name="inputbox" id="zip" placeholder="Zip Code">
+        <input type="submit" name="button" id="button" value="submit">
       </form>
     </div>
   </div>
