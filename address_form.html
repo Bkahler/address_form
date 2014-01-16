@@ -4,24 +4,28 @@
   <title>Enter Address</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="address_form.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="address_form.css">
   <link rel="stylesheet" media="(min-width: 1025px)" href="address_form_full.css">
   <link rel="stylesheet" media="(max-width: 320px)" href="address_form_phone.css">
   <link rel="stylesheet" media="(min-width: 321px) and (max-width: 1024px)" href="address_form_tablet.css">
 </head>
 <body>
+  <header></header>
   <div id= "main">
     <h1>Welcome to ExampleForm</h1><br>
-    <h3> Please Enter Your Address</h3>
     <div id ="errorMessage"></div>
+    <h3 id="prompt"> Please Enter Your Address</h3>
     <div class="form" id="address_form">
       <form name="address" id="address_form" action=" " method="post">
-        Input your address:<br>
+        <label>Street Number:</label><br>
         <input type="text" class="no_error" name="streetNumber" id="streetNumber" placeholder="Street Number">
-        <input type="text" class="no_error" name="unit" id="unit" placeholder="Unit">
-        <input type="text" class="no_error" name="city" id="city" placeholder="City">
+        <input type="text" class="no_error" name="unit" id="unit" placeholder="Unit"><br>
+        <label>City:</label><br>
+        <input type="text" class="no_error" name="city" id="city" placeholder="City"><br>
+        <label> State and Zip: </label><br>
         <select class="no_error" id='state'>
-          <option value="">Select State</option>
+          <option value="">State</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
           <option value="AZ">Arizona</option>
@@ -79,5 +83,6 @@
       </form>
     </div>
   </div>
+  <footer></footer>
 </body>
 </html>
