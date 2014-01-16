@@ -10,34 +10,38 @@ function validateInput(){
 
       if ($('#streetNumber').val().match(/^\d+\s[a-zA-Z]+/) ){
         streetNumberValid = true
+        $('#streetNumber').removeClass("error")
       }
       else{
-        $('#streetNumber').toggleClass("error")
+        $('#streetNumber').addClass("error")
         $('#errorMessage').append('<li>Street Number cannot be blank </li>')
       };
 
       if($('#unit').val().length > 4){
-        $('#unit').toggleClass("error")
+        $('#unit').addClass("error")
         $('#errorMessage').append('<li> That does not appear to be a valid unit number</li>')
       }
       else{
         unitValid = true
+        $('#unit').removeClass("error")
       };
 
       if($('#city').val() ==""){
-        $('#city').toggleClass("error")
+        $('#city').addClass("error")
         $('#errorMessage').append('<li>City cannot be blank </li>')
       }
       else{
         cityValid = true
+        $('#city').removeClass("error")
       };
 
       if($('#state').val() ==""){
-        $('#state').toggleClass("error")
+        $('#state').addClass("error")
         $('#errorMessage').append('<li>Please Select a State</li>')
       }
       else{
         stateValid = true
+        $('#state').removeClass("error")
       };
 
       if ($('#zip').val().match(/\d{5}/) ){
@@ -45,7 +49,7 @@ function validateInput(){
         zipValid = true
       }
       else{
-        $('#zip').toggleClass("error")
+        $('#zip').addClass("error")
         $('#errorMessage').append('<li>Please provide a valid Zip Code</li>')
       };
 

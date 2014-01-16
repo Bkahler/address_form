@@ -21,12 +21,12 @@
     <div class="form" id="address_form">
       <form name="address" id="address_form" action=" " method="post">
         <label>Street Number:</label><br>
-        <input type="text" class="no_error" name="streetNumber" id="streetNumber" placeholder="Street Number">
+        <input type="text" class="no_error" name="streetNumber" id="streetNumber" placeholder="Street Number" required autofocus>
         <input type="text" class="no_error" name="unit" id="unit" placeholder="Unit"><br>
         <label>City:</label><br>
-        <input type="text" class="no_error" name="city" id="city" placeholder="City"><br>
+        <input type="text" class="no_error" name="city" id="city" placeholder="City" required><br>
         <label> State and Zip: </label><br>
-        <select class="no_error" id='state'>
+        <select class="no_error" id='state' required>
           <option value="">State</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
