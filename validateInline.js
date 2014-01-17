@@ -1,9 +1,5 @@
-$(function(){
-  validate_submit();
-  validate_inline();
+  function validateInline(){
 
-  //inline validation function to test if appropriate entry has been entered in each field before submit
-  function validate_inline(){
     // Start of inline test for streetNumber
     $('#streetNumber').blur(function(event){
       if ($('#streetNumber').val().match(/^\d+\s[a-zA-Z]+/) ){
@@ -58,17 +54,4 @@ $(function(){
 
     })
     //end of zip test
-
-
-
-
   };
-
-
-  function validate_submit(){
-    $('#address_form').submit(function(event){
-      event.preventDefault();
-      validateInput();
-    });
-  };
-});

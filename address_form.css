@@ -16,6 +16,15 @@ font-family: 'Love Ya Like A Sister', cursive;
   width: 500px;
 }
 
+#button{
+  background-color:#e74c3c;
+  height: 40px;
+}
+#button:hover{
+  background-color:#c0392b;
+
+}
+
 
 
 /*Desktop Computer specific*/
@@ -76,8 +85,7 @@ font-family: 'Love Ya Like A Sister', cursive;
   #error_div{
     width: 450px;
     text-align: left;
-}
-
+  }
 
   #streetNumber{
     width: 360px;
@@ -148,11 +156,9 @@ font-family: 'Love Ya Like A Sister', cursive;
     margin-right: 40px;
     margin-left: auto;
     padding: 5px;
-
   }
-
-
 }
+/*end of iphone specific*/
 
 
 
