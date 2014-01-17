@@ -7,14 +7,6 @@ background-attachment: fixed;
 font-family: 'Love Ya Like A Sister', cursive;
 }
 
-h3{
-  text-align: right;
-  margin-right: 150px;
-}
-
-#main{
-  text-align: center;
-}
 
 #form_div{
   border-radius: 20px;
@@ -24,12 +16,9 @@ h3{
   width: 500px;
 }
 
-#error_div{
-    width: 450px;
-    text-align: left;
-    margin-top: -60px;
-}
 
+
+/*Desktop Computer specific*/
 @media (min-width: 1025px){
   #form_div{
     margin-right: 10px;
@@ -41,8 +30,10 @@ h3{
   }
 }
 
+/*Ipad specific*/
 @media (max-width: 1024px){
   #error_div{
+    margin-top: -60px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -53,6 +44,7 @@ h3{
   }
 }
 
+/*Ipad and Desktop*/
 @media (min-width: 321px){
   input{
     height: 30px;
@@ -73,7 +65,19 @@ h3{
 
   h1{
     font-size: 55px;
+    text-align: center;
   }
+
+  h3{
+  text-align: right;
+  margin-right: 150px;
+  }
+
+  #error_div{
+    width: 450px;
+    text-align: left;
+}
+
 
   #streetNumber{
     width: 360px;
@@ -96,6 +100,59 @@ h3{
 
 }
 
+/*iphone specific*/
+@media (max-width: 320px){
+  h1{
+    text-align: center;
+    font-size: 40px
+  }
+
+  #form_div{
+  text-align: left;
+  width: 270px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+  h3{
+    text-align: left;
+  }
+
+  input{
+    height: 30px;
+    border-radius:10px;
+    border: 0px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  #unit{
+    width: 50px;
+  }
+
+  #state{
+    width: 140px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 9px;
+  }
+
+  #error_div{
+    font-size: 12px;
+    margin-top: -20px;
+    width: 270px;
+  }
+
+ li{
+    margin-right: 40px;
+    margin-left: auto;
+    padding: 5px;
+
+  }
+
+
+}
 
 
 
@@ -122,15 +179,14 @@ h3{
 #zip_error{
   visibility: hidden;
 }
-/*End of Error Message Styling*/
-
-
-/*Form Field Styling*/
 
 .error{
   border: 1px solid red;
 }
+/*End of Error Message Styling*/
 
-/*end of form Field Styling*/
+
+
+
 
 

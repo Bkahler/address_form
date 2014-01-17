@@ -24,10 +24,22 @@ function validateInput(){
       };
 
       if (zipValid && stateValid && cityValid && streetNumberValid == true){
-        alert('your form is valid')
+        var streetNumber_input = $('#streetNumber').val()
+        var city_input = $('#city').val()
+        var state_input = $('#state').val()
+        var zip_input = $('#zip').val()
+
+        var full_address = streetNumber_input +" "+city_input+", "+state_input+" "+ zip_input
+
+        alert( full_address )
+
+        $('#streetNumber').val("")
+        $('#city').val("")
+        $('#state').val("")
+        $('#zip').val("")
       }
       else{
-        alert('somthing is wrong')
+        alert('Something is wrong... Please check the form')
           formValid = false
           treetNumberValid = false
           unitValid = false
