@@ -46,6 +46,7 @@ function validateInput(){
 
       if ($('#zip').val().match(/\d{5}/) ){
         alert('zip is good to go!');
+        $('#zip').removeClass("error");
         zipValid = true
       }
       else{

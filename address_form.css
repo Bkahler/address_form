@@ -16,18 +16,50 @@ input{
   font-size: 20px;
 }
 
+#prompt{
+   margin-right: 10px;
+   margin-left: auto;
+}
+
+#main{
+  text-align: center;
+}
+
+
+/*Error Message Styling*/
+#errorMessage{
+  list-style-type: none;
+  color: red;
+}
+
+#street_error{
+  visibility: hidden;
+}
+
+#city_error{
+  visibility: hidden;
+}
+/*End of Error Message Styling*/
+
+
+/*Form Field Styling*/
+#streetNumber{
+  width: 360px;
+}
+
+#unit{
+  width: 50px;
+}
+#unit_label{
+  margin-left: 265px;
+}
+
 #state{
   width: 140px;
   font-size: 18px;
   background-color: white;
   border-radius: 9px;
   border: 0px;
-
-}
-
-#prompt{
-   margin-right: 10px;
-   margin-left: auto;
 }
 
 .error{
@@ -39,12 +71,11 @@ input{
   background-color:#e9e3b1;
   text-align: left;
   padding: 20px;
-  width: 60%;
+  width: 500px;
   margin-right: 10px;
   margin-left: auto;
 }
 
-#main{
-  text-align: center;
-}
+/*end of form Field Styling*/
+
 

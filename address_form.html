@@ -16,16 +16,23 @@
   <header></header>
   <div id= "main">
     <h1>Welcome to ExampleForm</h1><br>
-    <div id ="errorMessage"></div>
+    <div>
+      <ul id ="errorMessage">
+        <li id="street_error"> Please provide a street number (E.g. 271 Oak Street)</li>
+        <li id="city_error"> Please provide a city (E.g. San Francisco)</li>
+        <li id="state_error"> Please select a state</li>
+        <li id="zip_error"> Please provide a 5 digit zip code (E.g 94102)</li>
+      </ul>
+    </div>
     <h3 id="prompt"> Please Enter Your Address</h3>
     <div class="form" id="address_form">
       <form name="address" id="address_form" action=" " method="post">
-        <label>Street Number:</label><br>
+        <label>Street Number* :</label><label id="unit_label">Unit (optional) :</label><br>
         <input type="text" class="no_error" name="streetNumber" id="streetNumber" placeholder="Street Number" required autofocus>
         <input type="text" class="no_error" name="unit" id="unit" placeholder="Unit"><br>
-        <label>City:</label><br>
+        <label>City* :</label><br>
         <input type="text" class="no_error" name="city" id="city" placeholder="City" required><br>
-        <label> State and Zip: </label><br>
+        <label> State and Zip* : </label><br>
         <select class="no_error" id='state' required>
           <option value="">State</option>
           <option value="AL">Alabama</option>
