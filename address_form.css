@@ -7,23 +7,6 @@ background-attachment: fixed;
 font-family: 'Love Ya Like A Sister', cursive;
 }
 
-input{
-  height: 30px;
-  border-radius:10px;
-  border: 0px;
-  margin: 5px;
-  padding: 5px;
-  font-size: 20px;
-}
-
-select{
-  border: 0px;
-  width: 140px;
-  font-size: 18px;
-  background-color: white;
-  border-radius: 9px;
-}
-
 h3{
   text-align: right;
   margin-right: 150px;
@@ -35,19 +18,68 @@ h3{
   text-align: left;
   padding: 20px;
   width: 500px;
-  margin-right: 10px;
-  margin-left: auto;
 }
+
+#error_div{
+    width: 450px;
+    text-align: left;
+    margin-top: -60px;
+}
+
+@media (min-width: 1025px){
+
+  #form_div{
+    margin-right: 10px;
+    margin-left: auto;
+  }
+
+  #error_div{
+    float: left;
+  }
+}
+
+@media (max-width: 1024px){
+  #error_div{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #form_div{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+@media (min-width: 321px){
+
+  input{
+    height: 30px;
+    border-radius:10px;
+    border: 0px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  select{
+    border: 0px;
+    width: 140px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 9px;
+  }
+}
+
+
+
+
 
 #main{
   text-align: center;
 }
 
-#error_div{
-  width: 450px;
-  text-align: left;
-  float: left;
-}
+
 
 
 /*Error Message Styling*/

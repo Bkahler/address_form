@@ -16,7 +16,6 @@
   <header></header>
   <div id= "main">
     <h1>Welcome to ExampleForm</h1><br>
-    <h3 id="prompt"> Please Enter Your Address</h3>
     <div id="error_div">
       <ul id ="errorMessage">
         <li id="street_error"> Please provide a street number (E.g. 271 Oak Street)</li>
@@ -26,6 +25,7 @@
       </ul>
     </div>
     <div class="form" id="form_div">
+      <h3 id="prompt"> Please Enter Your Address</h3>
       <form name="address" id="address_form" action=" " method="post">
         <label>Street Number* :</label><label id="unit_label">Unit (optional) :</label><br>
         <input type="text" name="streetNumber" id="streetNumber" placeholder="Street Number" required autofocus>
