@@ -24,13 +24,29 @@ select{
   border-radius: 9px;
 }
 
-#prompt{
-   margin-right: 10px;
-   margin-left: auto;
+h3{
+  text-align: right;
+  margin-right: 150px;
+}
+
+#form_div{
+  border-radius: 20px;
+  background-color:#e9e3b1;
+  text-align: left;
+  padding: 20px;
+  width: 500px;
+  margin-right: 10px;
+  margin-left: auto;
 }
 
 #main{
   text-align: center;
+}
+
+#error_div{
+  width: 450px;
+  text-align: left;
+  float: left;
 }
 
 
@@ -80,16 +96,6 @@ select{
 
 .error{
   border: 1px solid red;
-}
-
-.form{
-  border-radius: 20px;
-  background-color:#e9e3b1;
-  text-align: left;
-  padding: 20px;
-  width: 500px;
-  margin-right: 10px;
-  margin-left: auto;
 }
 
 /*end of form Field Styling*/
