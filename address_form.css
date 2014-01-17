@@ -16,6 +16,14 @@ input{
   font-size: 20px;
 }
 
+select{
+  border: 0px;
+  width: 140px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 9px;
+}
+
 #prompt{
    margin-right: 10px;
    margin-left: auto;
@@ -39,6 +47,14 @@ input{
 #city_error{
   visibility: hidden;
 }
+
+#state_error{
+  visibility: hidden;
+}
+
+#zip_error{
+  visibility: hidden;
+}
 /*End of Error Message Styling*/
 
 
@@ -59,7 +75,7 @@ input{
   font-size: 18px;
   background-color: white;
   border-radius: 9px;
-  border: 0px;
+  /*border: 1px solid red;*/
 }
 
 .error{
